@@ -1,0 +1,188 @@
+.container {
+  display: flex;
+  background-color: #000; /* full dark background */
+  color: #fff;
+  min-height: 100vh;
+}
+
+.rightSection {
+  flex: 1;
+  padding: 2rem;
+  background-color: #111; /* slightly lighter than black */
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Assignment Form */
+.assignmentForm {
+  background-color: #1c1c1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.assignmentForm input,
+.assignmentForm textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c2c2e;
+  color: #fff;
+}
+
+.assignmentForm input:focus,
+.assignmentForm textarea:focus {
+  outline: 2px solid #555; /* subtle grey highlight */
+}
+
+.assignmentForm button {
+  background-color: #fff;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 9999px; /* pill style */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.assignmentForm button:hover {
+  background-color: #e5e5e5; /* softer white */
+}
+
+/* Assignments List */
+.assignmentList {
+  background-color: #1c1c1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.assignmentCard {
+  background-color: #2c2c2e;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: background 0.3s ease;
+}
+
+.assignmentCard:hover {
+  background-color: #3a3a3c;
+}
+
+.assignmentCard h3 {
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+}
+
+.assignmentCard p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #d1d1d1;
+}
+
+/* Status Styling */
+.assignmentStatus {
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.assignmentStatus.pending {
+  background-color: #333;
+  color: #aaa; /* subtle grey for pending */
+}
+
+.assignmentStatus.submitted {
+  background-color: #444;
+  color: #fff; /* clean white for submitted */
+}
+.assignmentStatus.graded {
+  background-color: #f43f5e; /* vibrant red for graded */
+  color: #fff;
+}
+.container {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.noAssignments {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #1c1c1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.teacher {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.subject {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+.dueDate {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 0.3rem;
+}
+.status {
+  margin-top: 0.8rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+.status.pending {   
+  background-color: #333;
+  color: #aaa;
+}
+.status.submitted {
+  background-color: #444;
+  color: #fff;
+}
+.status.graded {
+  background-color: #f43f5e;
+  color: #fff;
+}
