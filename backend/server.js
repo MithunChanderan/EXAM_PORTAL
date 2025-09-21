@@ -1,27 +1,33 @@
-// server/server.js
+// server.js
+
+// 1. All imports and requires go at the top
 const express = require('express');
-const connectDB = require('./db');
 const cors = require('cors');
-const assignmentRoutes = require("./routes/assignments");
-app.use("/api/assignments", assignmentRoutes);
+require('dotenv').config(); // Load environment variables
+const connectDB = require('./db');
 
-require('dotenv').config();
+// Import route files
+const authRoutes = require('./routes/auth');
+const assignmentRoutes = require('./routes/assignments');
 
+// 2. Initialize the Express app
 const app = express();
 
-// Connect Database
+// 3. Connect to the database
 connectDB();
 
-// Middlewares
+// 4. Use middleware
+// Note: Middleware must be set up *before* the routes
 app.use(cors()); // Allow cross-origin requests
 app.use(express.json()); // Allow us to accept JSON data in the body
 
-// Define Routes
-app.use('/api/auth', require('./routes/auth'));
-// Add other routes for courses, exams etc. here
+// 5. Define API routes
+app.use('/api/auth', authRoutes);
+app.use('/api/assignments', assignmentRoutes);
 
-app.get('/', (req, res) => res.send('API Running'));
+// A simple test route
+app.get('/', (req, res) => res.send('API is running...'));
 
+// 6. Define the port and start the server
 const PORT = process.env.PORT || 5000;
-
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
