@@ -6,14 +6,14 @@ const userSchema = new mongoose.Schema({
   role: { type: String, enum: ["student", "teacher"], required: true }
 });
 
-module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model("User", userSchema);
 
 const assignmentSchema = new mongoose.Schema({
   title: String,
   subject: String,
   desc: String,
-  assignedTo: { type: mongoose.Schema.Types.ObjectId, ref: "user" }, // student
-  assignedBy: { type: mongoose.Schema.Types.ObjectId, ref: "user" }, // teacher
+  assignedTo: { type: mongoose.Schema.Types.ObjectId, ref: "User" }, // student
+  assignedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" }, // teacher
   createdAt: { type: Date, default: Date.now }
 });
 
