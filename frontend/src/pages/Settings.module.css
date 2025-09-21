@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  background-color: #000; /* Apple Music deep black */
+  min-height: 100vh;
+  color: #e5e5e7;
+}
+
+.main {
+  flex: 1;
+  background-color: #121212;
+  padding: 2.5rem;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color:#f43f5e;
+}
+
+.description {
+  font-size: 1rem;
+  color: #a1a1a6;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.section {
+  background-color: #1c1c1e;
+  border: 1px solid #2c2c2e;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  background-color: #2c2c2e;
+  transform: translateY(-2px);
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f43f5e;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  font-size: 0.95rem;
+  color: #a1a1a6;
+  line-height: 1.6;
+}
+.container {
+  display: flex;
+}
+
+.rightSection, .main {
+  margin-left: 250px; /* leave space for fixed sidebar */
+  padding: 2rem;
+  flex: 1;
+}

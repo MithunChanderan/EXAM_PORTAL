@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  background-color: #000; /* Apple Music dark */
+  min-height: 100vh;
+  color: #e5e5e7; /* off-white */
+}
+
+.main {
+  flex: 1;
+  padding: 2.5rem;
+  background-color: #121212;
+  box-shadow: inset 0 0 20px rgba(255, 45, 85, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #a1a1a6; /* muted gray */
+  margin-top: 0.5rem;
+}
+
+.courseId {
+  color: #ff2d55; /* Apple Music pink/red */
+  font-family: "SF Mono", monospace;
+  font-weight: 600;
+}
