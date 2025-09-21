@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Assignment = require("../models/Assignment");
+const Assignment = require("../models/Assignments");
 const auth = require("../middleware/auth"); // your JWT middleware
 
 // POST /api/assignments
