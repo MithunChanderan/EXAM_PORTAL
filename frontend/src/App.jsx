@@ -1,18 +1,18 @@
 // client/src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import LoginPage from './pages/LoginPage.jsx';
-import RegisterPage from './pages/RegisterPage';
-import Dashboard from './pages/Dashboard';
-import TeacherDashboard from './pages/TeacherDashboard';
-import Exams from './pages/Exams';
-import TeacherExams from './pages/TeacherExams';
-import CourseDetails from './pages/CourseDetails';
-import Settings from './pages/Settings';
-import Schedules from './pages/Schedules';
-import TeacherSchedules from './pages/TeacherSchedules';
-import TeacherAssignments from './pages/TeacherAssignments';
-import StudentAssignments from './pages/StudentAssignments';
+import LoginPage from './views/login.jsx';
+import RegisterPage from './views/RegisterPage.js';
+import Dashboard from './views/Dashboard.js';
+import TeacherDashboard from './views/TeacherDashboard.js';
+import Exams from './views/Exams.js';
+import TeacherExams from './views/TeacherExams.js';
+import CourseDetails from './views/CourseDetails.jsx';
+import Settings from './views/Settings.js';
+import Schedules from './views/Schedules.js';
+import TeacherSchedules from './views/TeacherSchedules.js';
+import TeacherAssignments from './views/TeacherAssignments.js';
+import StudentAssignments from './views/StudentAssignments.js';
 // Protect routes with role-based access
 const PrivateRoute = ({ children, role }) => {
   const token = localStorage.getItem('token');

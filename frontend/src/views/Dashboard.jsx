@@ -2,7 +2,7 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 import styles from "./Dashboard.module.css";
-import LoginPage from "./LoginPage";
+import LoginPage from "./login";
 const Dashboard = () => {
   const subjects = [
     {
